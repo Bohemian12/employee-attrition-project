@@ -1,6 +1,6 @@
 # Employee Attrition Analysis 
 
-A exploratory data analysis on [IBM HR Analytics Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-modelling) on Kaggle to showcase my data analytics skills.
+A exploratory data analysis on [IBM HR Analytics Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data) on Kaggle to showcase my data analytics skills.
 
 
 This Project is divided into 6 phases of data analysis which are-
