@@ -17,7 +17,7 @@ In this phase we need to just ask questions to get to know the scope and how to 
 
 **Q1.** What are the top 5 common factors which effect the attrition rate of employees?  
 **Q2.** What are the trends based on department?  
-**Q3.** How salary affects the attrition of employees?  
+**Q3.** How salary affects the attrition of employees?
 **Q4.** Which age group left the company most?  
 **Q5.** Relation b/w employees who overtime and employees who left the company?  
 
@@ -53,6 +53,8 @@ data of 1 employee so i will change this inconsistent data to 1.
 
 
 # ANALYSE
+After cleaning the data we move on to next step which is analysis where we start with exploring the data first then moving deeper and finding the answer to the questions that we asked in the first phase. So, lets start with Exploring it In excel i used discriptive summary in **Data Analysis** tool in data tab on first age column and then monthly salary column, then using **COUNTIF** on **Attrition** column found out that 237 employees left the company and 1233 employess are currently in the company. After getting the hang of the data i imported the data table to PowerBI 
+
 # SHARE 
 # ACT
 
