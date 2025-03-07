@@ -45,7 +45,7 @@ first i will check all the data constraints so that we don't miss anything i wil
 * Consistency - all components are consistent
 * Trim - Trimed all the data to make sure its clean using power query
 
-## Recording Changes
+### Recording Changes
 most of columns were not correct datatype i used power query's detect datatype to quickly correct all the
 columns's datatype.
 There was a mistake in EmployeeCount column there is 'h' written in it all others are 1 because each row has only
