@@ -53,7 +53,18 @@ data of 1 employee so i will change this inconsistent data to 1.
 
 
 # ANALYSE
-After cleaning the data we move on to next step which is analysis where we start with exploring the data first then moving deeper and finding the answer to the questions that we asked in the first phase. So, lets start with Exploring it In excel i used discriptive summary in **Data Analysis** tool in data tab on first age column and then monthly salary column, then using **COUNTIF** on **Attrition** column found out that 237 employees left the company and 1233 employess are currently in the company. After getting the hang of the data i imported the data table to PowerBI 
+After cleaning the data we move on to next step which is analysis where we start with exploring the data first 
+then moving deeper and finding the answer to the questions that we asked in the first phase. So, lets start with
+Exploring it In excel i used discriptive summary in **Data Analysis** tool in data tab on first age column and 
+then monthly salary column, then using **COUNTIF** on **Attrition** column found out that 237 employees left the
+company and 1233 employess are currently in the company. After getting the hang of the data i imported the data 
+table to PowerBI and opened the data in power query to add new column **EmployeeStatus** by duplication of
+Attrition column then replacing Yes with Non-Working and No with Working to make it more clear in the
+visualizations we will make. Then made a stacked column chart using average of monthly income with newly made
+employee status column to show the contrast that people who left or non-working used to get less income when 
+compared to working employees this can be because the people who left were young and has less income but when i 
+compared average age then diffrence was of approx 4 years which can be the factor for monthly income this dosen't 
+give us clearity. Then segmenting the monthly income column into three parts low, medium & high income employees
 
 # SHARE 
 # ACT
