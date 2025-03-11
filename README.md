@@ -64,7 +64,7 @@ visualizations we will make. Then made a stacked column chart using average of m
 employee status column to show the contrast that people who left or non-working used to get less income when 
 compared to working employees this can be because the people who left were young and has less income but when i 
 compared average age then diffrence was of approx 4 years which can be the factor for monthly income this dosen't 
-give us clearity. Then segmenting the monthly income column into three parts low, medium & high income employees
+give us clearity. Then segmenting the monthly income column into three parts low, medium & high income employees after that created a DAX measure **AttritionRate** which will show the attrition rate after visualizing both the segmentation of income and attrition rate we found out that attrition rate of low income employee are way higher that the other two which tells us that the salary is affecting the low income employees and they are going to find high income jobs.
 
 # SHARE 
 # ACT
