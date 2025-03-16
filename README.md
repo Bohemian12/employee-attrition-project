@@ -15,11 +15,11 @@ This Project is divided into 6 phases of data analysis which are-
 
 In this phase we need to just ask questions to get to know the scope and how to do and what questions to answer.
 
-**Q1.** What are the top 5 common factors which effect the attrition rate of employees?  
+**Q1.** What are the top common factors which effect the attrition rate of employees?  
 **Q2.** What are the trends based on department?  
 **Q3.** How salary affects the attrition of employees?
 **Q4.** Which age group left the company most?  
-**Q5.** Relation b/w employees who overtime and employees who left the company?  
+**Q5.** what percent of employee who left were doing overtime?  
 
 These questions needed to be answered using this data by doing this it helps streamline the process of data analysis.
 
@@ -65,6 +65,7 @@ employee status column to show the contrast that people who left or non-working 
 compared to working employees this can be because the people who left were young and has less income but when i 
 compared average age then diffrence was of approx 4 years which can be the factor for monthly income this dosen't 
 give us clearity. Then segmenting the monthly income column into three parts low, medium & high income employees after that created a DAX measure **AttritionRate** which will show the attrition rate after visualizing both the segmentation of income and attrition rate we found out that attrition rate of low income employee are way higher that the other two which tells us that the salary is affecting the low income employees and they are going to find high income jobs.
+After that made it into a bar chart which answered our one of the questions then analyse how many of employee who left were doing overtime for this i used pie chart to show the proportion of which were doing and which were not first i made a measure for employees who left using DAX's CALCULATE counting the number of persons yes in attrition column then used **overtime** column to make two categories "Yes" or "No" after puting both of them into a pie visual we get that more than half of the employees who left were doing overtime. after this question done going to how are each department's condition on attrition for this i decided to show it in a line chart which will visualise trend in all three departments of **Attrition rate** 
 
 # SHARE 
 # ACT
