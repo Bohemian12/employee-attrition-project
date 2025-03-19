@@ -1,74 +1,127 @@
-# Employee Attrition Analysis 
+# Employee Attrition Analysis
 
-A exploratory data analysis on [IBM HR Analytics Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data) on Kaggle to showcase my data analytics skills.
+An exploratory data analysis on the [IBM HR Analytics Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data) from Kaggle, showcasing my data analytics skills.
 
+## **Project Phases**
+This project follows the six key phases of data analysis:
+1. **Ask**
+2. **Prepare**
+3. **Process**
+4. **Analyze**
+5. **Share**
+6. **Act**
 
-This Project is divided into 6 phases of data analysis which are-
-1. Ask
-2. Prepare
-3. Process
-4. Analyse
-5. share
-6. Act
+---
 
-# ASK
+## **1. ASK**
+In this phase, I define the scope of the project by formulating key questions:
 
-In this phase we need to just ask questions to get to know the scope and how to do and what questions to answer.
+- **Q1.** Which age group left the company the most?
+- **Q2.** What are the attrition trends based on department?
+- **Q3.** How does salary impact employee attrition?
+- **Q4.** What patterns emerge from educational backgrounds in relation to attrition?
+- **Q5.** What percentage of employees who left were working overtime?
 
-**Q1.** What are the top common factors which effect the attrition rate of employees?  
-**Q2.** What are the trends based on department?  
-**Q3.** How salary affects the attrition of employees?
-**Q4.** Which age group left the company most?  
-**Q5.** what percent of employee who left were doing overtime?  
+Answering these questions will help streamline the data analysis process.
 
-These questions needed to be answered using this data by doing this it helps streamline the process of data analysis.
+---
 
-# PREPARE
+## **2. PREPARE**
+The dataset is sourced from Kaggle, an open-source platform for datasets. While this is not an official dataset from a company, it simulates real HR analytics data.
 
-In Prepare we need to found how we will collect the data will it be first hand or second hand data and many other things,
-as per my project i have collected my data from kaggle a platform where you can find open source datasets to work with although this isn't the original company data its a made up data of company hr analytics.
-now we know the data and where it comes from we can procced to process it.
-This dataset have 1470 employees data in it.
+- The dataset contains **1,470 employee records**.
+- Since this is second-hand data, assumptions and validation checks are necessary before analysis.
 
-# PROCESS
+---
 
-In this phase i will check the integrity of data and clean it accordingly using different tools and methods.
-first i will check all the data constraints so that we don't miss anything i will do as followings:
-* Datatype - checking all the columns data type 
-* Data range - checking the columns should no go above a certian range
-* Mandatory - some things can't be null in the data
-* Unique - can't have duplicates
-* regx patterns - some standarized patterns in data
-* Cross-field validation - Certain conditions for multiple fields must be satisfied
-* Accuracy -  match to the original survey 
-* Completeness - this data is complete
-* Consistency - all components are consistent
-* Trim - Trimed all the data to make sure its clean using power query
+## **3. PROCESS**
+In this phase, I check the integrity of the data and clean it using various techniques.
 
-### Recording Changes
-most of columns were not correct datatype i used power query's detect datatype to quickly correct all the
-columns's datatype.
-There was a mistake in EmployeeCount column there is 'h' written in it all others are 1 because each row has only
-data of 1 employee so i will change this inconsistent data to 1.
+### **Data Cleaning Steps:**
+- **Data Types:** Verified all column data types and corrected inconsistencies using Power Query.
+- **Range Checks:** Ensured numerical values fell within expected ranges.
+- **Handling Null Values:** Verified completeness of mandatory fields.
+- **Duplicate Removal:** Checked and eliminated any duplicate records.
+- **Standardization:** Ensured consistent formatting (e.g., trimming spaces, correcting labels).
+- **Error Correction:** Found an inconsistency in the `EmployeeCount` column where one value contained an 'h'. Replaced it with `1`, as each row represents a single employee.
 
+---
 
-# ANALYSE
-After cleaning the data we move on to next step which is analysis where we start with exploring the data first 
-then moving deeper and finding the answer to the questions that we asked in the first phase. So, lets start with
-Exploring it In excel i used discriptive summary in **Data Analysis** tool in data tab on first age column and 
-then monthly salary column, then using **COUNTIF** on **Attrition** column found out that 237 employees left the
-company and 1233 employess are currently in the company. After getting the hang of the data i imported the data 
-table to PowerBI and opened the data in power query to add new column **EmployeeStatus** by duplication of
-Attrition column then replacing Yes with Non-Working and No with Working to make it more clear in the
-visualizations we will make. Then made a stacked column chart using average of monthly income with newly made
-employee status column to show the contrast that people who left or non-working used to get less income when 
-compared to working employees this can be because the people who left were young and has less income but when i 
-compared average age then diffrence was of approx 4 years which can be the factor for monthly income this dosen't 
-give us clearity. Then segmenting the monthly income column into three parts low, medium & high income employees after that created a DAX measure **AttritionRate** which will show the attrition rate after visualizing both the segmentation of income and attrition rate we found out that attrition rate of low income employee are way higher that the other two which tells us that the salary is affecting the low income employees and they are going to find high income jobs.
-After that made it into a bar chart which answered our one of the questions then analyse how many of employee who left were doing overtime for this i used pie chart to show the proportion of which were doing and which were not first i made a measure for employees who left using DAX's CALCULATE counting the number of persons yes in attrition column then used **overtime** column to make two categories "Yes" or "No" after puting both of them into a pie visual we get that more than half of the employees who left were doing overtime. after this question done going to how are each department's condition on attrition for this i decided to show it in a line chart which will visualise trend in all three departments of **Attrition rate** 
+## **4. ANALYZE**
+After cleaning the data, I performed an in-depth analysis using **Excel** and **Power BI**.
 
-# SHARE 
-# ACT
+### **Key Findings:**
+- **Salary & Attrition:** Employees with lower salaries had significantly higher attrition rates.
+  - Created income segments: **Low, Medium, and High**.
+  - Used a **DAX measure** (`AttritionRate`) to show how attrition varied across salary levels.
+  - Found that **low-income employees had the highest attrition rate**.
 
+- **Overtime & Attrition:**
+  - Created a **DAX measure** to count employees who left.
+  - Used a **pie chart** to visualize the proportion of attrition among employees working overtime.
+  - Found that **more than 50% of employees who left were working overtime**.
 
+- **Department-wise Trends:**
+  - Built a **line chart** to track attrition trends across departments.
+  - **Sales and HR had the highest attrition rates**.
+  - Sales attrition was **significantly higher** than other departments.
+
+- **Age & Attrition:**
+  - Created an **Age Grouping column** in Power Query.
+  - Used a **bar chart** to compare attrition across age groups.
+  - Found that **18-22-year-olds had the highest attrition rate**, particularly in the **Sales department**.
+
+- **Education Field & Attrition:**
+  - Created a **stacked column chart** showing attrition per education field.
+  - **Life Sciences and Medical backgrounds** had the highest number of employees leaving.
+  - This was expected since **most employees belonged to these fields**.
+
+---
+
+## **5. SHARE**
+This phase involves presenting the analysis effectively through **data visualizations** in Power BI.
+
+### **Dashboard Design:**
+- Used **color-coded visuals** to improve clarity.
+- **Simplified charts** by removing unnecessary labels.
+- **Highlighted key insights** for better storytelling.
+- **Interactive filters (slicers)** were added to explore data based on:
+  - **Employee Status (Working / Non-Working)**
+  - **Gender (Male / Female)**
+- **DAX Measures** were used to dynamically display key metrics.
+
+---
+
+## **6. ACT**
+Based on the findings, I propose the following recommendations:
+
+1. **Increase salaries for low-income employees** to reduce attrition.
+2. **Improve training & onboarding for 18-22-year-olds** to help retain younger employees.
+3. **Reduce excessive overtime** to prevent burnout and high turnover.
+4. **Provide additional support for Sales employees**, as their attrition rate is disproportionately high.
+5. **Conduct further research on HR attrition trends** to understand underlying causes.
+
+---
+
+### **Conclusion**
+This analysis helped identify key factors affecting attrition and provided data-driven recommendations to improve employee retention. Through **Power BI visualizations**, stakeholders can easily interpret the insights and take informed actions.
+
+---
+
+### **Future Improvements**
+- Perform a **Chi-Square Test** in Power BI to statistically determine the significance of attrition factors.
+- Implement **Machine Learning** models to predict future attrition trends.
+- Expand analysis using **external industry benchmarks** to compare with real-world data.
+
+---
+
+### **Tools Used:**
+✅ Microsoft Excel (Initial data exploration)  
+✅ Power Query (Data Cleaning & Transformation)  
+✅ DAX (Custom Measures & Calculations)  
+✅ Power BI (Data Visualization & Dashboard)  
+
+---
+
+This documentation is designed for **GitHub**, making it clear and structured for readers. Let me know if you need any modifications! 🚀
 
