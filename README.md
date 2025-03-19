@@ -16,9 +16,9 @@ This project follows the six key phases of data analysis:
 ## **1. ASK**
 In this phase, I define the scope of the project by formulating key questions:
 
-**Q1.** Which age group left the company the most? 
-**Q2.** What are the attrition trends based on department? 
-**Q3.** How does salary impact employee attrition? 
+**Q1.** Which age group left the company the most? <br>
+**Q2.** What are the attrition trends based on department? <br>
+**Q3.** How does salary impact employee attrition? <br>
 **Q4.** What patterns emerge from educational backgrounds in relation to attrition? 
 **Q5.** What percentage of employees who left were working overtime?
 
