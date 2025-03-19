@@ -90,6 +90,8 @@ This phase involves presenting the analysis effectively through **data visualiza
   - **Gender (Male / Female)**
 - **DAX Measures** were used to dynamically display key metrics.
 
+![Dashboard Screenshot]()
+
 ---
 
 ## **6. ACT**
