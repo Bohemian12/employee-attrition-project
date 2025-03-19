@@ -19,7 +19,7 @@ In this phase, I define the scope of the project by formulating key questions:
 **Q1.** Which age group left the company the most? <br>
 **Q2.** What are the attrition trends based on department? <br>
 **Q3.** How does salary impact employee attrition? <br>
-**Q4.** What patterns emerge from educational backgrounds in relation to attrition? 
+**Q4.** What patterns emerge from educational backgrounds in relation to attrition? <br>
 **Q5.** What percentage of employees who left were working overtime?
 
 Answering these questions will help streamline the data analysis process.
