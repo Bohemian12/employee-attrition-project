@@ -125,5 +125,3 @@ This analysis helped identify key factors affecting attrition and provided data-
 
 ---
 
-This documentation is designed for **GitHub**, making it clear and structured for readers. Let me know if you need any modifications! 🚀
-
